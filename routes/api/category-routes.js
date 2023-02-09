@@ -59,7 +59,7 @@ router.put('/:id', async (req, res) => {
     const categorys = await Category.update(req.body, 
       {
       where: {
-        id: req.params.id,
+        id: req.params.id
       },
     });
     //if categorys is not valid
@@ -89,3 +89,5 @@ router.delete('/:id', (req, res) => {
 });
 
 module.exports = router;
+
+// example for video
